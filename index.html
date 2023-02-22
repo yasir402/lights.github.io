@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>LIghts website</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
+
+
+    <link href="img/icon.jpg" rel="icon">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51" onload="slider()">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand-logo"><img class="logo" src="img/logo.png" alt="logo pic"></a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="#home" class="nav-item nav-link active"> <i class="fa fa-home"></i> Home</a>
+                    <a href="#portfolio" class="nav-item nav-link"> <i class="fa fa-layer-group ""></i> Galary</a>
+                        <a href=" #team" class="nav-item nav-link"> <i class="fa fa-user"></i> About</a>
+                    <a href="Products.html" class="nav-item nav-link"> <i class="fa fa-shopping-cart"></i> Products</a>
+                    <a href="contac.html" class="nav-item nav-link"> <i class="fa fa-phone"></i> Contact us </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Nav bar end -->
+
+    <div class="banner1" id="home">
+        <div class="slider1">
+            <img src="img/" alt="" id="slideimg">
+        </div>
+        <div class="overlay">
+
+        </div>
+
+    </div>
+
+    <script>
+
+        var slideimg = document.getElementById("slideimg");
+        var images = new Array(
+            "img/slide1.jpg",
+            "img/slide2.jpg",
+            "img/slide3.jpg",
+            "img/slide4.jpg",
+            "img/slide5.jpg",
+
+        );
+        var len = images.length;
+        var i = 0;
+        function slider() {
+
+            if (i > len - 1) {
+                i = 0;
+
+            }
+
+            slideimg.src = images[i];
+            i++;
+
+            setTimeout("slider()", 3000);
+        }
+
+    </script>
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Galary</p>
+                <h2>Galary</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul id="portfolio-filter">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-1">Lamps</li>
+                        <li data-filter=".filter-2">Led lights</li>
+                        <li data-filter=".filter-3">Wall lights</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/lamp1.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Table Lamp</h3>
+                            <a class="btn" href="img/lamp1.jpeg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/lamp3.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Table Lamp</h3>
+                            <a class="btn" href="img/lamp3.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+             
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/led light4.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>led light</h3>
+                            <a class="btn" href="img/led light4.jpeg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                  
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/led light3.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>led light</h3>
+                            <a class="btn" href="img/led light3.jpeg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/wall light1.jpeg"Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Wall light</h3>
+                            <a class="btn" href="img/wall light1.jpeg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/wall light3.jpg"Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Wall light</h3>
+                            <a class="btn" href="img/wall light3.jpg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/lamp2.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Table lamp</h3>
+                            <a class="btn" href="img/lamp2.jpeg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/led light2.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Led lights</h3>
+                            <a class="btn" href="img/led light2.jpeg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/wall light2.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Wall light</h3>
+                            <a class="btn" href="img/wall light2.jpeg" data-lightbox="portfolio">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nav Bar End -->
+
+
+
+
+
+
+            <!-- Team Start --> 
+            <div class="team" id="team">
+                <div class="container">
+                    <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                        <p>My Team</p>
+                        <h2>Expert Team Members</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 wow rollIn" data-wow-delay="0.0s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-2.jpeg" alt="Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Umar</h2>
+                                    <h4></h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                    </p>
+                                    <div class="team-social">
+                                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow rollIn" data-wow-delay="0.2s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-4.jpeg" alt="Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Muazzam</h2>
+                                    <h4></h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                    </p>
+                                    <div class="team-social">
+                                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 wow rollIn" data-wow-delay="0.4s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-3.jpeg"  alt="Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Yasir Ansari</h2>
+                                    <h4> </h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                    </p>
+                                    <div class="team-social">
+                                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow rollIn" data-wow-delay="0.4s">
+                            <div class="team-item">
+                                <div class="team-img">
+                                    <img src="img/team-1.jpeg" class="binish" alt="Image">
+                                </div>
+                                <div class="team-text">
+                                    <h2>Binish</h2>
+                                    <h4></h4>
+                                    <p>
+                                        Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                    </p>
+                                    <div class="team-social">
+                                        <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                        <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- team end -->
+
+                        <!-- product Start -->
+                        <!-- <div class="blog" id="blog">
+                            <div class="container">
+                                <div class="section-header text-center wow rollIn" data-wow-delay="0.1s">
+                                    <p>Products</p>
+                                    <h2>Our Products</h2>
+                                    <br>
+                                    <div class="product-card">
+                                        <div class="logo-cart">
+                                            <div class="logo-cart">
+                                                <div class="back">
+                                                    <i class="fi fi-sr-angle-left"></i>
+                                                    <span>back</span>
+                                                </div>
+                                                <i class="fi fi-rr-shopping-cart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="main-images">
+                                            <img src="" id="white" alt="pic here">
+                                            <div class="shows-details">
+                                                <div class="color-price">
+                                                    <div class="button">
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- product End -->
+
+
+                            <!-- Footer Start -->
+                            <footer class="footer wow rollIn">
+
+                                <div class="container text-center text-md-left">
+                                    <div class="row text-center text-md-left">
+                                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                            <h5 class="text-uppercase mb-4 font-weight-bold " id="foot">Campany name
+                                            </h5>
+                                            <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                                                elit. Laudantium distinctio molestiae necessitatibus harum aut? Iste?
+                                            </p>
+
+
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                            <h5 class="text-uppercase mb-4 font-weight-bold   " id="foot"> Products</h5>
+                                            <p>
+
+                                                <a href="#" class="text-dark" style="text-decoration:none"><b> Table
+                                                        lamps </b></a>
+                                            </p>
+                                            <p>
+
+                                                <a href="#" class="text-dark" style="text-decoration:none"> <b> Led
+                                                        lights </b></a>
+                                            </p>
+                                            <p>
+
+                                                <a href="#" class="text-dark" style="text-decoration:none"><b> wall
+                                                        lights </b></a>
+                                            </p>
+                                            <p>
+
+                                                <a href="#" class="text-dark" style="text-decoration:none"> <b> all
+                                                        types of lights </b></a>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                                            <h5 class="text-uppercase mb-4 font-weight-bold " id="foot"> Useful Lines
+                                            </h5>
+                                            <p>
+
+                                                <a href="#" class="text-dark" style="text-decoration:none"> <b> Your
+                                                        account </b></a>
+                                            </p>
+                                            <p>
+
+                                                <a href="#" class="text-dark" style="text-decoration:none"> <b> Become
+                                                        an Affiliates </b></a>
+                                            </p>
+                                            <p>
+
+                                                <a href="#" class="text-dark" style="text-decoration:none"> <b> Shipping
+                                                        Rates </b></a>
+                                            </p>
+                                            <p>
+
+                                                <a href="#" class="text-dark" style="text-decoration:none"> <b> Help
+                                                    </b></a>
+                                            </p>
+
+                                        </div>
+                                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-dark">
+                                            <h5 class="text-uppercase mb-4 font-weight-bold" id="foot"> Contact us</h5>
+                                            <p>
+                                                <i class="fas fa-phone-volume mr-1">Yasir@gmail.com</i>
+                                            </p>
+                                            <p>
+                                                <i class="fas fa-phone-volume mr-2">Umar@gmail.com</i>
+                                            </p>
+                                            <p>
+                                                <i class="fas fa-phone-volume mr-3"> Muazzam@gmail.com </i>
+                                            </p>
+                                            <p>
+                                                <i class="fas fa-phone-volume mr-3"> Binish@gmail.com</i>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <hr class="mb-4">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-7 col-lg-8">
+                                            <b class="text-dark"> <i> Copyright 2022 All right Reserved by:</i>
+
+                                                <a href="" style="text-decoration:none"> <strong
+                                                        class="text-warning">Chics Electronics</strong></a>
+                                            </b>
+
+                                        </div>
+                                        <div class="col-md-5 col-lg-4">
+                                            <div class="text-center text-md-right">
+                                                <ul class="list-unstylish list-inline">
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="btn-floating btn-sm-text-dark"
+                                                            style="font: size 23px;"> <i
+                                                                class="fab fa-facebook text-white"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="btn-floating btn-sm-text-dark"
+                                                            style="font: size 23px;"> <i
+                                                                class="fab fa-twitter text-white"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="btn-floating btn-sm-text-dark"
+                                                            style="font: size 23px;"> <i
+                                                                class="fab fa-google text-white"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="btn-floating btn-sm-text-dark"
+                                                            style="font: size 23px;"> <i
+                                                                class="fab fa-linkedin-in text-white"></i></a>
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <a href="#" class="btn-floating btn-sm-text-dark"
+                                                            style="font: size 23px;"> <i
+                                                                class="fab fa-youtube text-white"></i></a>
+                                                    </li>
+
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </footer>
+
+                            <!-- Footer End -->
+
+
+                            <!-- Back to top button -->
+                            <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+                            <!-- Pre Loader -->
+                            <div id="loader" class="show">
+                                <div class="loader"></div>
+                            </div>
+
+
+                            <!-- JavaScript Libraries -->
+                            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                            <script
+                                src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+                            <script src="lib/easing/easing.min.js"></script>
+                            <script src="lib/wow/wow.min.js"></script>
+                            <script src="lib/waypoints/waypoints.min.js"></script>
+                            <script src="lib/typed/typed.min.js"></script>
+                            <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                            <script src="lib/isotope/isotope.pkgd.min.js"></script>
+                            <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+                            <!-- Contact Javascript File -->
+                            <script src="mail/jqBootstrapValidation.min.js"></script>
+                            <script src="mail/contact.js"></script>
+
+                            <!-- Template Javascript -->
+                            <script src="js/main.js"></script>
+                            <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+</body>
+
+</html>
